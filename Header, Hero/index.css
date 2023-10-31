@@ -185,7 +185,19 @@ height: 360px;
     height: auto;
 }
 
-.cobertura-detalhes {
-    color: maroon;
+.recheios-cremeoumousse {
+    width: auto;
+    background-color: rgba(235, 162, 151, 0.94);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centralize os elementos verticalmente */
+    padding: 20px;
+    text-align: center;
+}
+
+.recheios-cremeoumousse .titles h1 {
+      color: maroon;
+    font-size: 36px;
+    font-weight: 800;
 }
  
