@@ -29,7 +29,7 @@ body {
 /* Estilos para contêiner */
 .container {
   max-width: 1200px; /* Define a largura máxima do contêiner para 1200 pixels */
-  width: 90%; /* Define a largura do contêiner como 90% da largura disponível */
+  width: 100%; /* Define a largura do contêiner como 90% da largura disponível */
   margin: auto; /* Centraliza o contêiner horizontalmente na página */
 }
 
@@ -72,20 +72,20 @@ body {
 
 /* Estilos para a barra de navegação (navbar) */
 .navbar {
-  box-shadow: 0px 5px 10px 0px #f5f5e9; /* Sombra na parte inferior da barra de navegação */
+  box-shadow: 0px 5px 10px 0px #f7f76b; /* Sombra na parte inferior da barra de navegação */
   position: fixed; /* A barra de navegação é fixada na parte superior da janela de visualização */
   width: 100%; /* A largura da barra de navegação ocupa toda a largura da tela */
-  background: #e2d0d0; /* Cor de fundo da barra de navegação */
-  color: maroon; /* Cor do texto da barra de navegação */
+  background: #e08989; /* Cor de fundo da barra de navegação */  
   opacity: 0.85; /* Opacidade da barra de navegação */
   height: 80px; /* Altura da barra de navegação */
   z-index: 12; /* Camada de sobreposição, controla a ordem de exibição */
   align-items: center; /* Centraliza os itens verticalmente */
+  
 }
 
 .navbar h1{
   font-size: 20px;
-  color: #000;  
+  color: #000;   
 
 }
 
@@ -97,15 +97,15 @@ body {
   height: 64px; /* Altura do contêiner da barra de navegação */
   align-items: center; /* Centraliza os itens verticalmente */
   
+  
+
 }
 
 /* Itens do menu */
 .menu-items {
-  order: 3; /* Ordem de exibição dos itens do menu (mais à direita) */
-  display: flex; /* Exibe os elementos do menu como uma linha flexível */
+  order: 3; /* Ordem de exibição dos itens do menu (mais à direita) */ 
   align-items: center; 
-
-  
+  display:flex; 
 }
 
 /* Itens da lista do menu */
@@ -116,18 +116,18 @@ body {
   font-size: 1.2rem; /* Tamanho da fonte dos itens do menu */
   align-items: center;  
   text-align: center;
+  padding-top: 20px; 
   
 }
 
 /* Links dos itens do menu */
 .menu-items a {
   text-decoration: none; /* Remove a decoração de link (sublinhado) */
-  color: maroon; /* Cor do texto dos links dos itens do menu */
+  color: black; /* Cor do texto dos links dos itens do menu */
   font-weight: 500; /* Peso da fonte dos links dos itens do menu */
   transition: color 0.3s ease-in-out; /* Adiciona uma transição suave na cor dos links ao passar o mouse */
-  
+    
 }
-
 
 /* Estilos para links dos itens do menu quando passam o mouse sobre eles */
 .menu-items a:hover {
@@ -139,23 +139,23 @@ body {
 .logo {
   order: 1; /* Ordem de exibição do logotipo (mais à esquerda) */
   font-size: 2.3rem; /* Tamanho da fonte do logotipo */
-  margin-bottom: 0.5rem; /* Espaçamento inferior do logotipo */
+  margin-bottom: 0.5rem; /* Espaçamento inferior do logotipo */ 
+
 }
-
-
 
 /* Estilos para a imagem do cabeçalho */
 .headerImage {
   width: 250px; /* Largura da imagem do cabeçalho */
   height: 100px; /* Altura da imagem do cabeçalho */
-  margin-right: 0%; /* Espaçamento à direita da imagem do cabeçalho (nenhum espaç0amento) */
-}
+  margin-right: 0%; /* Espaçamento à direita da imagem do cabeçalho (nenhum espaçamento) */
 
+}
 
 /* ............//// Estili hero imagem tomando div toda usando url ////......... */
 
 /* Estilos para a área de destaque (showcase) */
 .showcase-area {
+  width: 100%;
   height: 50vh; /* Altura da área de destaque definida como 50% da altura da janela de visualização */
   background: linear-gradient(rgba(240, 240, 240, 0.144),
   rgba(255, 255, 255, 0.473)),
@@ -172,6 +172,7 @@ body {
   align-items: center; /* Centraliza os elementos horizontalmente */
   justify-content: center; /* Centraliza os elementos verticalmente */
   height: 100%; /* A altura da área de destaque é definida como 100% da altura do contêiner pai */
+
   font-size: 1.6rem; /* Tamanho da fonte para o conteúdo dentro da área de destaque */
 }
 
@@ -183,12 +184,10 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-
 .herored {
 color: white;
 font-display: 50px;
 }
-
 
 
 /* ......//Sobre a Empresa//...... */
@@ -197,6 +196,7 @@ font-display: 50px;
 
 /* Estilos para a seção "Sobre a Empresa" (about) */
 .sobre {
+  width: 100%;
   padding: 50px 0; /* Espaçamento interno de 50px na parte superior e inferior */
   background:white; /* Cor de fundo da seção "Sobre a Empresa" */
 }
@@ -205,6 +205,7 @@ font-display: 50px;
 .about-wrapper {
   display: flex; /* Exibe os elementos em uma linha flexível */
   flex-wrap: wrap; /* Permite que os elementos se ajustem à largura do contêiner */
+  width: 100%;
 }
 
 .about-text  h1 {
@@ -277,8 +278,7 @@ font-display: 50px;
 /*----Monte seu Bolo----*/
 
 .monte-seu-bolo  {
-  width: auto;
-  height: 640px;
+  width: 100%;
   background-color: rgba(231, 135, 135, 0.549);
   display: flex;
   flex-direction: column;
@@ -291,11 +291,8 @@ font-display: 50px;
 
 .monte-seu-bolo .titles {
   text-align: center;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
-
-
-
 
 .monte-seu-bolo .massas {
   display: flex;
@@ -309,17 +306,7 @@ font-display: 50px;
   width: 45%;
   margin-bottom: 20px;
   padding: 10px;
-}
-
-.monte-seu-bolo .massa::before {
-  content: "";
-  position: absolute;
-  inset: -10px;
-  z-index: -1;
- /* background: linear-gradient(315deg, red, green, blue, red);*//* borda colorida girando*/
-  background-size: 800% 800%;
-  border-radius: 10px;
-  animation: animate 4s linear infinite;
+ 
 }
 
 .monte-seu-bolo .massa img {
@@ -329,16 +316,11 @@ font-display: 50px;
   border-radius: 10px;
   border: 5px solid #ddd;
   padding: 20px;
-  transition: transform 0.5s ease-in-out; /* Adicione a transição para o efeito de zoom */
-
+  transition: transform 0.5s ease-in-out;
 }
-
 .monte-seu-bolo .massa:hover img {
   transform: scale(1.2);
 }
-
-/* Restante do código permanece inalterado */
-
 
 
 .monte-seu-bolo .massa.massa-esquerda p {
@@ -349,27 +331,13 @@ font-display: 50px;
   text-align: right;
 }
 
-.monte-seu-bolo .massa:hover::before {
-  transform: rotate(360deg);
-}
-
-@keyframes animate {
-  0% {
-      background-position: 0% 50%;
-  }
-  100% {
-      background-position: 100% 50%;
-  }
-}
-
-
 
 
 /*-----Escolha seu recheio-----*/
 
 
 .recheios-cremeoumousse {
-  background-image: url('/src/Rectangle.png'); /* Substitua pelo caminho da sua imagem */
+  background-image: url('/Imagens/Rectangle.png'); /* Substitua pelo caminho da sua imagem */
   width: 100%;
   height: 480px;
   background-color: rgba(255, 255, 0, 0.294);
@@ -489,7 +457,7 @@ font-display: 50px;
 
 .cobertura {
 
-  width: auto;
+  width: 100%;
   height: 5600;
   background-color:rgba(222, 159, 159, 0.587);   
   display: flex;
@@ -602,6 +570,7 @@ padding: 0;
 
 /* Estilos para o contêiner de produtos com a classe .food-container */
 .food-container {
+  width: 100%;
   display: flex;
   justify-content: center; /* Adiciona esta linha para centralizar horizontalmente */
   flex-wrap: wrap; /* Adiciona esta linha para permitir que as imagens quebrem para a próxima linha se necessário */
@@ -704,8 +673,6 @@ padding: 0;
   margin-top: 100px;
 }
 
-
-
 /* Estilos para o título "food-menu-heading" */
 /* Alinha o texto ao centro */
 /* Define o tamanho da fonte como 3.4 rem (34 pixels) */
@@ -713,6 +680,7 @@ padding: 0;
 /* Define a cor do texto como cinza (#666) */
 
 .food-menu-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 50px 0px 30px 0px;
@@ -736,7 +704,6 @@ padding: 0;
 
   
 }
-
 
 /*--------Efeito hover-----*/
 
@@ -839,73 +806,32 @@ padding: 0;
 
 /*-----Cardapio de doces-----*/
 
-#cardapio-doces{
-  padding: 5rem 0;
-  color:wheat; 
-}
-
-.cardapio-title {
+.cardapio-doces {
   text-align: center;
   font-size: 3.5rem;
-  font-weight: 400;
-  color: #555;
-  margin-top: auto;
-
+  font-weight: 400; 
+  margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 .cardapio-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-  padding: 1rem;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+  align-items: center;
 }
 
-
-.cardapio-box {
-  text-align: center;
-  padding: 1rem;
-  color: #000;
+.cardapio-menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
-.cardapio-1 img {
-  display: block;
-  width: 250px;
-  height: 400px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-  margin-top: 50px;
-  
-}
-
-
-.cardapio-2 img {
-  display: block;
-  width: 250px;
-  height: 400px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-  margin-top: 50px;
-}
-.cardapio-3 img {
-  display: block;
-  width: 250px;
-  height: 400px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-  margin-top: 50px;
-}
+.cardapio-1 img,
+.cardapio-2 img,
+.cardapio-3 img,
 .cardapio-4 img {
   display: block;
   width: 250px;
@@ -916,38 +842,23 @@ padding: 0;
   border: 1px solid #ddd;
   border-radius: 30px;
   padding: 10px;
-  margin-top: 50px;
+  margin-right: 50px; /* Adicionado espaçamento à direita */
 }
 
-
-/* -------Efeito hover-------*/
-
-/* - imagem 1----efeito hover--- feed back*/
-.cardapio-1:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
-}
-
-/* - imagem 2----efeito hover--- feed back*/
-.cardapio-2:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
-}
-/* - imagem 3----efeito hover--- feed back*/
-.cardapio-3:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
-}
-
-/* - imagem 4----efeito hover--- feed back*/
+/* Efeito hover */
+.cardapio-1:hover img,
+.cardapio-2:hover img,
+.cardapio-3:hover img,
 .cardapio-4:hover img {
   transform: scale(1.6);
-  transition: 1s all ease-in-out ;
+  transition: 1s all ease-in-out;
 }
 
-
-
-
+.cardapio-description h2 {
+  font-size: 1.4rem;
+  color: black;
+  padding-left: 20px;  
+}
 
 
 /* ---------Bixe Nosso pdf------*/
@@ -959,11 +870,11 @@ padding: 0;
   align-items: center;
   justify-content: center;
   height: 230px;
-  width: auto;
+  width: 100%;
   margin: 0;
   background-color: rgba(255, 255, 0, 0.294);
   flex-direction: column;
-  background-image: url('/src/Rectangle.png');
+  background-image: url('/Imagens/Rectangle.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1008,138 +919,70 @@ padding: 0;
 }
 
 
-
-
-
-
-
-
 /* ........./ Feedback/.......... */
 /* Estilos para exibir depoimentos de clientes */
 
 #feedback {
-  padding: 5rem 0;
-  background: rgba(226, 148, 148, 0.692);
-  
-}
-
-.feedback-title {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 400;
-  color: #555;
-  
-
+  margin-bottom: 40px;
+  margin-top: 100px;
+ 
 }
 
 .feedback-container {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  padding: 50px 0px 30px 0px;
+  align-items: center;
+  background-color:rgba(231, 135, 135, 0.549);
 }
 
-.feedback-box .checked {
-  color: #ff9529;
+.feedback-menu-item {
+  display: flex;
+  flex-direction: column; /* Alterado para column para empilhar imagem e título verticalmente */
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
-
-
-.feedback-box {
-  text-align: center;
-  padding: 1rem;
-}
-
-.customer-photo-1 img {
+.feedback-1 img,
+.feedback-2 img,
+.feedback-3 img,
+.feedback-4 img {
   display: block;
   width: 250px;
-  height: 300px;
+  height: 400px;
   border: 5px;
   border-radius: 10px;
   padding: 5px;
   border: 1px solid #ddd;
   border-radius: 30px;
   padding: 10px;
+  margin-bottom: 10px; /* Adicionado espaçamento abaixo das imagens */
+  margin-right: 50px;
+  
   
 }
 
-
-.customer-photo-2 img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-}
-.customer-photo-3 img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-}
-.customer-photo-4 img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-}
-.customer-photo-5 img {
-  display: block;
-  width: 250px;
-  height: 300px;
-  border: 5px;
-  border-radius: 10px;
-  padding: 5px;
-  border: 1px solid #ddd;
-  border-radius: 30px;
-  padding: 10px;
-}
-/* -------Efeito hover-------*/
-
-/* - imagem 1----efeito hover--- feed back*/
-.customer-photo-1:hover img {
+/* Efeito hover */
+.feedback-1:hover img,
+.feedback-2:hover img,
+.feedback-3:hover img,
+.feedback-4:hover img {
   transform: scale(1.6);
-  transition: 1s all ease-in-out ;
+  transition: 1s all ease-in-out;
 }
 
-/* - imagem 2----efeito hover--- feed back*/
-.customer-photo-2:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
-}
-/* - imagem 3----efeito hover--- feed back*/
-.customer-photo-3:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
+.feedback-description h2 {
+  font-size: 1.4rem;
+  color: black;
 }
 
-/* - imagem 4----efeito hover--- feed back*/
-.customer-photo-4:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
-}
 
-/* - imagem 5----efeito hover--- feed back*/
-.customer-photo-5:hover img {
-  transform: scale(1.6);
-  transition: 1s all ease-in-out ;
-}
 
-/* ........ Contato........... */
 /* Estilos para a seção de formulário de contato */
 
 #contact {
@@ -1150,6 +993,7 @@ padding: 0;
 }
 
 .contact-container {
+  width: 100%;
   display: flex;
   background: #fff;
 }
@@ -1364,6 +1208,13 @@ padding: 0;
   }
 }
 
+/*-----------------------footer---------------*/
+
+.footer{
+  width: 100%;
+ 
+}
+
 
 
 /* ......../ media query:O Media Query é um recurso do CSS que visa
@@ -1372,9 +1223,23 @@ padding: 0;
   que o usuário estiver utilizando, o site irá se adaptar e ficar totalmente
   responsivo, sem quebras de layout. /.......... */
 
+
+
+
+
+@media only screen and (max-width: px) {
+    body {
+      background-color: lightblue;
+    }
+}
+
 @media (max-width: 768px) {
+
+
+  
   .navbar {
-    opacity: 0.95;
+    opacity: 0.95;   
+   
   }
 
   .navbar-container input[type="checkbox"],
@@ -1399,7 +1264,7 @@ padding: 0;
     opacity: 0;
  }
 
-.navbar-container .hamburger-lines {
+ .navbar-container .hamburger-lines {
     display: block;
     height: 23px;
     width: 35px;
@@ -1410,7 +1275,7 @@ padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+  }
 
   .navbar-container .hamburger-lines .line {
     display: block;
@@ -1495,6 +1360,9 @@ padding: 0;
   .img-container {
     margin: 0;
   }
+
+
+  
 }
 
 @media (max-width: 500px) {
@@ -1563,3 +1431,4 @@ padding: 0;
     height: 50vmax;
   }
 }
+
