@@ -30,7 +30,7 @@ body {
 .container {
   max-width: 1200px; /* Define a largura máxima do contêiner para 1200 pixels */
   width: 100%; /* Define a largura do contêiner como 90% da largura disponível */
-  margin: auto; /* Centraliza o contêiner horizontalmente na página */
+  margin: auto; /* Centraliza o contêiner horizontalmente na página */ 
 }
 
 /* Estilos para botões */
@@ -49,7 +49,7 @@ body {
 /* Estilos para botões primários */
 .btn-primary {
   color: #fff; /* Define a cor do texto dos botões como branco */
-  background: #16a083; /* Define o fundo dos botões com uma cor específica */
+  background: #16a08244; /* Define o fundo dos botões com uma cor específica */
 }
 
 .btn-primary:hover {
@@ -72,11 +72,11 @@ body {
 
 /* Estilos para a barra de navegação (navbar) */
 .navbar {
-  box-shadow: 0px 5px 10px 0px #f7f76b; /* Sombra na parte inferior da barra de navegação */
+  box-shadow: 0px 5px 10px 0px white; /* Sombra na parte inferior da barra de navegação */
   position: fixed; /* A barra de navegação é fixada na parte superior da janela de visualização */
   width: 100%; /* A largura da barra de navegação ocupa toda a largura da tela */
   background: #e08989; /* Cor de fundo da barra de navegação */  
-  opacity: 0.85; /* Opacidade da barra de navegação */
+ /* opacity: 0.85; /* Opacidade da barra de navegação */
   height: 80px; /* Altura da barra de navegação */
   z-index: 12; /* Camada de sobreposição, controla a ordem de exibição */
   align-items: center; /* Centraliza os itens verticalmente */
@@ -95,9 +95,7 @@ body {
   display: flex; /* Exibe os elementos como uma linha flexível */
   justify-content: space-between; /* Espaço entre os elementos à esquerda e à direita */
   height: 64px; /* Altura do contêiner da barra de navegação */
-  align-items: center; /* Centraliza os itens verticalmente */
-  
-  
+  align-items: center; /* Centraliza os itens verticalmente */ 
 
 }
 
@@ -145,7 +143,7 @@ body {
 
 /* Estilos para a imagem do cabeçalho */
 .headerImage {
-  width: 250px; /* Largura da imagem do cabeçalho */
+  width: 150px; /* Largura da imagem do cabeçalho */
   height: 100px; /* Altura da imagem do cabeçalho */
   margin-right: 0%; /* Espaçamento à direita da imagem do cabeçalho (nenhum espaçamento) */
 
@@ -210,11 +208,13 @@ font-display: 50px;
 
 .about-text  h1 {
   color: #555;
+  margin-top: 30px;
 }
 
 
 .about-text   h3 {
   color: maroon;
+  margin-top: 30px;
 }
 
 /* Estilos para o título da seção "Sobre a Empresa" */
@@ -234,10 +234,14 @@ font-display: 50px;
 
 /* Estilos para a imagem na seção "Sobre a Empresa" */
 .about-img.imagem-sobre {
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 45%;
   margin-bottom: 20px;
-  margin-top: 20px; /* Adicione uma margem superior conforme necessário */
+  margin-top: 30px; /* Adicione uma margem superior conforme necessário */
+ margin-left: 20%;
+ 
 }
 
 .about-img.imagem-sobre::before {
@@ -338,8 +342,7 @@ font-display: 50px;
 
 .recheios-cremeoumousse {
   background-image: url('/Imagens/Rectangle.png'); /* Substitua pelo caminho da sua imagem */
-  width: 100%;
-  height: 480px;
+  width: 100%; 
   background-color: rgba(255, 255, 0, 0.294);
   display: flex;
   flex-direction: column;
@@ -572,8 +575,10 @@ padding: 0;
 .food-container {
   width: 100%;
   display: flex;
-  justify-content: center; /* Adiciona esta linha para centralizar horizontalmente */
-  flex-wrap: wrap; /* Adiciona esta linha para permitir que as imagens quebrem para a próxima linha se necessário */
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  padding: 50px 0px 30px 0px;
+  align-items: center;
 }
 
 /* Estilos para imagens dentro do contêiner de produtos com a classe .food-container */
@@ -587,6 +592,7 @@ padding: 0;
   border: 5px solid #ddd;
   border-radius: 30px;
   padding: 10px;
+  align-items: center;
 
 }
 
@@ -659,9 +665,6 @@ padding: 0;
   }
 }*/
 
-
-
-
 /* .........../Outros Produtos/............ */
 
 .food-menu-heading {
@@ -683,7 +686,9 @@ padding: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens horizontalmente */
   padding: 50px 0px 30px 0px;
+  align-items: center;
 }
 
 /* Estilos para o contêiner "food-menu-container" */
@@ -818,6 +823,7 @@ padding: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Centraliza os itens horizontalmente */
   padding: 50px 0px 30px 0px;
   align-items: center;
 }
@@ -826,7 +832,7 @@ padding: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .cardapio-1 img,
@@ -842,7 +848,7 @@ padding: 0;
   border: 1px solid #ddd;
   border-radius: 30px;
   padding: 10px;
-  margin-right: 50px; /* Adicionado espaçamento à direita */
+  margin-right: 40px; /* Adicionado espaçamento à direita */
 }
 
 /* Efeito hover */
@@ -857,7 +863,7 @@ padding: 0;
 .cardapio-description h2 {
   font-size: 1.4rem;
   color: black;
-  padding-left: 20px;  
+  padding-left: 50px;  
 }
 
 
@@ -869,7 +875,7 @@ padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 230px;
+  height: 300px;
   width: 100%;
   margin: 0;
   background-color: rgba(255, 255, 0, 0.294);
@@ -887,7 +893,7 @@ padding: 0;
 
 .button-container {
   display: flex;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .button-container a {
@@ -922,12 +928,13 @@ padding: 0;
 /* ........./ Feedback/.......... */
 /* Estilos para exibir depoimentos de clientes */
 
-#feedback {
+
+.Feedback-title{
   text-align: center;
   font-size: 3.5rem;
   font-weight: 400;
-  margin-bottom: 40px;
-  margin-top: 100px;
+  color: #666;
+  background-color:rgba(231, 135, 135, 0.549);
  
 }
 
@@ -945,7 +952,7 @@ padding: 0;
   display: flex;
   flex-direction: column; /* Alterado para column para empilhar imagem e título verticalmente */
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .feedback-1 img,
@@ -962,9 +969,8 @@ padding: 0;
   border-radius: 30px;
   padding: 10px;
   margin-bottom: 10px; /* Adicionado espaçamento abaixo das imagens */
-  margin-right: 50px;
-  
-  
+  margin-right: 20px;
+
 }
 
 /* Efeito hover */
@@ -1006,7 +1012,7 @@ padding: 0;
  color: #444;
  margin-bottom: 1rem;
  margin-top:50px;
- margin-left: -40%; 
+ margin-left: 0.5%; 
 }
 
 /*Espaçamento icone para o texto*/
@@ -1018,7 +1024,7 @@ padding: 0;
   width: 100%;
   object-position: center;
   object-fit: cover; 
-  margin-left: -60%;  
+  margin-left: -20%;  
 }
 
 
@@ -1120,9 +1126,7 @@ padding: 0;
   border-radius: 30px;
   font-size: 40px;
   position: relative;
-  overflow: hidden;
-  margin-left: -70%; 
- 
+  overflow: hidden; 
 }
  
 .link i{
@@ -1215,32 +1219,22 @@ padding: 0;
  
 }
 
-
+/*-----------------Media Query---------*/
 
 /* ......../ media query:O Media Query é um recurso do CSS que visa
  facilitar o processo de configuração e renderização dos elementos de um 
  site em diferentes tamanhos de tela. Dessa forma, independente do dispositivo
   que o usuário estiver utilizando, o site irá se adaptar e ficar totalmente
-  responsivo, sem quebras de layout. /.......... */
+  responsivo, sem quebras de layout. */
 
 
-
-
-
-@media only screen and (max-width: px) {
-    body {
-      background-color: lightblue;
-    }
-}
 
 @media (max-width: 768px) {
-
-
   
-  .navbar {
+  /*.navbar {
     opacity: 0.95;   
    
-  }
+  }*/
 
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
@@ -1323,7 +1317,7 @@ padding: 0;
     position: absolute;
     top: 5px;
     right: 100px;
-    font-size: 2rem;
+    font-size: 2rem;    
   }
 
   .navbar-container input[type="checkbox"]:checked~.menu-items {
@@ -1341,6 +1335,7 @@ padding: 0;
   .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
+  
 
   /* ......./ Produtos /......... */
 
@@ -1414,13 +1409,16 @@ padding: 0;
     font-size: 1.8rem;
     font-weight: 500;
   }
+
+  
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
   .img-container h3 {
     font-size: 1.5rem;
-  }
-
+    
+  }  
+  
   .img-container .btn {
     font-size: 0.7rem;
   }
@@ -1429,6 +1427,9 @@ padding: 0;
 @media (orientation: landscape) and (max-height: 500px) {
   .showcase-area {
     height: 50vmax;
+    
   }
+  
+
 }
 
