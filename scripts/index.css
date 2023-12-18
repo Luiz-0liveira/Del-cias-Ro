@@ -491,7 +491,7 @@ font-display: 50px;
   border-bottom-right-radius: 50%;
   background-image: url('/Imagens/kitkat.jpg'); 
   background-size: cover;
-  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+  opacity: 0.4; /* Ajustar a opacidade */
 }
 
 .cobertura::after {
@@ -500,8 +500,9 @@ font-display: 50px;
   border-bottom-left-radius: 50%;
   background-image: url('/Imagens/BOLO-01.png'); 
   background-size: cover;
-  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+  opacity: 0.4; /* Ajustar a opacidade */
 }
+
 
 .cobertura-lista {
   position: relative;
@@ -921,7 +922,7 @@ font-display: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 420px;
   width: 100%;
   margin: 0;
   background-color: rgba(255, 255, 0, 0.294);
@@ -935,6 +936,7 @@ font-display: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #555;
   font-size: 20px;
+  text-align: center; /* Centralizar o texto */
 }
 
 .button-container {
@@ -1340,7 +1342,7 @@ font-display: 50px;
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   
   /*.navbar {
     opacity: 0.95;   
@@ -1535,8 +1537,19 @@ font-display: 50px;
     margin: 0;
   }
 
+  /*---------pdf------*/
+  .button-container {
+    flex-direction: column; /* Alterado para direção de coluna em dispositivos móveis */
+  }
+
+  .button-container a {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 0; /* Removendo a margem direita para dispositivos móveis */
+  }
 
 }
+
 
 @media (max-width: 500px) {
   html {
