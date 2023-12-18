@@ -1043,9 +1043,6 @@ font-display: 50px;
   margin: auto;
   margin-top: 30px;
 }
-.texto p{
-  margin-top: 20px;
-}
 
 .pagamentos h1 {
   text-align: center;
@@ -1098,7 +1095,6 @@ font-display: 50px;
 .pagamentos .pagamento-img {
   margin-left: auto; /* Move a imagem para a extremidade direita */
 }
-
 
 /* Estilos para a seção de formulário de contato */
 
@@ -1217,7 +1213,7 @@ font-display: 50px;
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  margin-top: 60px;  
+  margin-top: 70px;  
 } 
 
 
@@ -1230,7 +1226,8 @@ font-display: 50px;
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 50px; 
 }
 
 .icones {
@@ -1486,8 +1483,37 @@ font-display: 50px;
   .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
+ 
+  /*-----Pagamento-----*/
+  .pagamentos {
+    margin-top: 10px; /* Ajusta a margem no topo para dispositivos móveis */
+  }
 
+  .pagamentos h1 {
+    font-size: 2.5rem; /* Reduz o tamanho da fonte para dispositivos móveis */
+    margin-top: 30px; /* Ajusta a margem no topo para dispositivos móveis */
+  }
 
+  .pagamentos .content {
+    flex-direction: column; /* Coloca os elementos em coluna para dispositivos móveis */
+    align-items: center; /* Centraliza os elementos na direção transversal (eixo Y) */
+    text-align: center; /* Centraliza o texto dentro de .content */
+  }
+
+  .pagamentos .texto {
+    max-width: none; /* Remove a largura máxima para dispositivos móveis */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .pagamentos img {
+    width: 100%; /* Faz a imagem ocupar a largura total para dispositivos móveis */
+    max-width: none; /* Remove a largura máxima para dispositivos móveis */
+  }
+
+  .pagamentos .pagamento-img {
+    margin-left: initial; /* Remove o ajuste para dispositivos móveis */
+    margin-top: 20px; /* Adiciona margem no topo para dispositivos móveis */
+  }
   
 
   /* ......./ Produtos /......... */
