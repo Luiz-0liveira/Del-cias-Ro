@@ -80,8 +80,10 @@ body {
   height: 80px; /* Altura da barra de navegação */
   z-index: 12; /* Camada de sobreposição, controla a ordem de exibição */
   align-items: center; /* Centraliza os itens verticalmente */
-  
 }
+
+
+  
 
 .navbar h1{
   font-size: 20px;
@@ -94,7 +96,7 @@ body {
 .navbar-container {
   display: flex; /* Exibe os elementos como uma linha flexível */
   justify-content: space-between; /* Espaço entre os elementos à esquerda e à direita */
-  height: 64px; /* Altura do contêiner da barra de navegação */
+  height: 90px; /* Altura do contêiner da barra de navegação */
   align-items: center; /* Centraliza os itens verticalmente */ 
 
 }
@@ -104,6 +106,7 @@ body {
   order: 3; /* Ordem de exibição dos itens do menu (mais à direita) */ 
   align-items: center; 
   display:flex; 
+  text-align: center; /* Centraliza os itens do menu */
 }
 
 /* Itens da lista do menu */
@@ -114,7 +117,7 @@ body {
   font-size: 1.2rem; /* Tamanho da fonte dos itens do menu */
   align-items: center;  
   text-align: center;
-  padding-top: 20px; 
+
   
 }
 
@@ -124,6 +127,8 @@ body {
   color: black; /* Cor do texto dos links dos itens do menu */
   font-weight: 500; /* Peso da fonte dos links dos itens do menu */
   transition: color 0.3s ease-in-out; /* Adiciona uma transição suave na cor dos links ao passar o mouse */
+  align-items: center;
+  text-align: center; /* Centraliza os itens do menu */
     
 }
 
@@ -137,16 +142,13 @@ body {
 .logo {
   order: 1; /* Ordem de exibição do logotipo (mais à esquerda) */
   font-size: 2.3rem; /* Tamanho da fonte do logotipo */
-  margin-bottom: 0.5rem; /* Espaçamento inferior do logotipo */ 
-
 }
 
 /* Estilos para a imagem do cabeçalho */
 .headerImage {
-  width: 150px; /* Largura da imagem do cabeçalho */
-  height: 100px; /* Altura da imagem do cabeçalho */
-  margin-right: 0%; /* Espaçamento à direita da imagem do cabeçalho (nenhum espaçamento) */
-
+  width: 140px; /* Largura da imagem do cabeçalho */
+  height: 80px; /* Altura da imagem do cabeçalho */
+  margin-left: 90%;
 }
 
 /* ............//// Estili hero imagem tomando div toda usando url ////......... */
@@ -293,9 +295,23 @@ font-display: 50px;
   margin-bottom: auto;
 }
 
-.monte-seu-bolo .titles {
+.massa h1{
+  color: maroon;
+}
+.titles h2{
+  color: maroon;
+
+}
+
+.monte-seu-bolo .titles h1 {
   text-align: center;
   margin-bottom: 20px;
+  color:#555;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding-top: 10px;
 }
 
 .monte-seu-bolo .massas {
@@ -359,10 +375,10 @@ font-display: 50px;
   justify-content: space-between;
 }
 
-/* Restante do seu CSS permanece o mesmo */
 
 
-.recheios-cremeoumousse .titles > h1 {
+
+.recheios-cremeoumousse .recheio-titles > h1 {
   color:#555;
   font-size: 36px;
   font-weight: 800;
@@ -373,37 +389,19 @@ font-display: 50px;
 
 
 
-.recheios-cremeoumousse .titles > h2 {
+.recheios-cremeoumousse .recheio-titles > h2 {
   color: maroon;
-  font-size: 36px;
+  font-size: 35px; /* Tamanho da fonte ajustado */
   font-weight: 800;
   margin-bottom: 20px;
   justify-content: space-between;
   padding-top: 10px;
 }
-.recheios-cremeoumousse .titles > h2.Recheio {
-  
-  color: maroon;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.recheios-cremeoumousse .titles > h2.mousse {
-
-  color: maroon;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: right;
-  margin-top: -40px;  
 
 
-}
-
-.recheios-cremeoumousse .titles > ul.opcao1 {
+.recheios-cremeoumousse .recheio-titles > ul.opcao1 {
   float:left;   
-  color: #000;
+  color: maroon;
   font-size: 24px; 
   font-weight: 400;
   line-height: normal;
@@ -413,9 +411,9 @@ font-display: 50px;
   
 }
 
-.recheios-cremeoumousse .titles > ul.opcao2 {
+.recheios-cremeoumousse .recheio-titles > ul.opcao2 {
   float: left;
-  color: #000;
+  color: maroon;
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
@@ -432,6 +430,10 @@ font-display: 50px;
 .opcao2 {
   list-style-type: none;
   padding: 0;
+}
+
+.opcao1 h2{
+  color: maroon;
 }
 
 
@@ -454,41 +456,85 @@ font-display: 50px;
 .opcao2 i {
   margin-right: 10px;
 }
+.opcao2 h2{
+  color: maroon;
+}
 
 
 /*-------Cobertura--------*/
 
 .cobertura {
-
-  width: 100%;
-  height: 5600;
-  background-color:rgba(222, 159, 159, 0.587);   
+  position: relative;
+  width: 100%; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centralize os elementos verticalmente */
+  align-items: center;
   padding: 20px;
-  text-align: center; /* Centralize o texto horizontalmente */
+  text-align: center;
   overflow: hidden;
   margin-bottom: auto;
-  
-     
 }
 
-.titles{
-color: maroon;
-list-style-type: none;
-padding: 0;
-
+.cobertura::before,
+.cobertura::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 0;
+ 
 }
-.titles li {
-  color: #000;
 
+.cobertura::before {
+  left: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background-image: url('/Imagens/kitkat.jpg'); 
+  background-size: cover;
+  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
 }
 
-.titles i {
+.cobertura::after {
+  right: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-image: url('/Imagens/BOLO-01.png'); 
+  background-size: cover;
+  opacity: 0.7; /* Ajuste a opacidade conforme necessário */
+}
+
+.cobertura-lista {
+  position: relative;
+  z-index: 1; 
+}
+
+.cobertura-lista h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: black; /* Cor do texto */
+}
+
+.cobertura-lista h2 {
+  color: maroon;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.cobertura-lista h3 {
+  color: maroon;
+  list-style-type: none;
+  padding: 0;
+}
+
+.cobertura-lista li {
+  color: black; /* Cor do texto */
+}
+
+.cobertura-lista i {
   margin-right: 5px;
-  
 }
+
 
 
 /* Animação do Sobre a Empresa */
@@ -863,7 +909,7 @@ padding: 0;
 .cardapio-description h2 {
   font-size: 1.4rem;
   color: black;
-  padding-left: 50px;  
+  padding-left: 60px; 
 }
 
 
@@ -985,8 +1031,73 @@ padding: 0;
 .feedback-description h2 {
   font-size: 1.4rem;
   color: black;
+  text-align: center;
 }
 
+
+
+/*---------Pagamaneto-------*/
+
+.pagamentos {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+}
+.texto p{
+  margin-top: 20px;
+}
+
+.pagamentos h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #666;
+  margin-top: 60px;
+}
+
+.pagamentos .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagamentos .texto {
+  max-width: 400px;
+}
+
+.pagamentos h2 {
+  margin-top: 20px;
+  color: #666;
+  margin-top: 30px;
+}
+
+.formas h2 {
+  margin-top: 30px;
+  color: #666;
+  margin-top: 30px;
+}
+
+.formas li {
+  margin-bottom: 15px;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.pagamentos img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+.pagamentos .formas li img {
+  width: 30px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Adicionando uma classe para ajustar a imagem de pagamento */
+.pagamentos .pagamento-img {
+  margin-left: auto; /* Move a imagem para a extremidade direita */
+}
 
 
 /* Estilos para a seção de formulário de contato */
@@ -1004,16 +1115,7 @@ padding: 0;
   background: #fff;
 }
 
-/*-----Liguejá ----*/
 
-.contact-container p{
- font-size: 1.5rem;
- font-weight: 500;
- color: #444;
- margin-bottom: 1rem;
- margin-top:50px;
- margin-left: 0.5%; 
-}
 
 /*Espaçamento icone para o texto*/
 
@@ -1024,7 +1126,7 @@ padding: 0;
   width: 100%;
   object-position: center;
   object-fit: cover; 
-  margin-left: -20%;  
+
 }
 
 
@@ -1071,7 +1173,7 @@ padding: 0;
   font-weight: 500;
   color: #444;
   margin-bottom: 1rem;
-  margin-top: 10px;
+  margin-top: 50px;
 
 }
 
@@ -1103,76 +1205,98 @@ padding: 0;
     background-color: #45a049; /* Cor verde escura ao passar o mouse */
 }
 
-/*---Botão redes sociais colorido segui um tutorial na internet*/ 
 
-.icones {
- height: 50px;
- left: flex;
- align-items: center;
- justify-content: center;
- margin-bottom: 10px;
- margin-top: 40px;
+
+/*--------Titulo icones------*/
+
+.titulo-icones h1{
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  color: #666; 
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 60px;  
+} 
+
+
+/*---Botão redes sociais colorido segui um tutorial na internet*/
+
+
+.icones-container {
+  height: 180px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
 }
 
-.link{
+.icones {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que os ícones quebrem para a próxima linha */
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.link {
   width: 100px;
   height: 100px;
-  margin: 0 60;
   box-shadow: 0 0 8px #000000be;
-  margin: 08px 0;     /* Foi adicionado espaçamento entre icones*/
+  margin: 0 10px 10px 0; /* Margem ajustada para melhor espaçamento entre os ícones */
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 30px;
-  font-size: 40px;
+  font-size: 30px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
- 
-.link i{
+
+.link i {
   transition: 0.2s;
 }
 
- .link:hover i{
+.link:hover i {
   color: white;
   transform: scale(1.2);
 }
- 
- 
- 
- .link-1 {
+
+.link-1 {
   color: orangered;
- }
- .link-2 {
+}
+
+.link-2 {
   color: crimson;
- }
- .link-3 {
+}
+
+.link-3 {
   color: rgb(24, 10, 148);
 }
 
 .link-4 {
   color: green;
 }
- 
-.link-1::before{
- background-color: orange;
+
+.link-1::before {
+  background-color: orange;
 }
- .link-2::before{
+
+.link-2::before {
   background-color: crimson;
 }
- 
-.link-3::before{
+
+.link-3::before {
   background-color: rgb(24, 10, 148);
-
- }
-
-.link-4::before{
-  background-color: green;
-
 }
- 
- 
-.link::before{
+
+.link-4::before {
+  background-color: green;
+}
+
+.link::before {
   content: "";
   width: 100px;
   height: 100px;
@@ -1180,38 +1304,28 @@ padding: 0;
   position: absolute;
   left: -100px;
   top: 100%;
- 
- 
 }
 
 .link:hover::before {
-  animation: desloca .5s;
+  animation: desloca 0.5s;
   left: 0%;
   top: 0%;
-     
- 
 }
 
 @keyframes desloca {
-    
-
-    
-
-  0%{
+  0% {
       left: -100px;
       top: 100%;
-
   }
-  50%{
-      left: 15% ;
+  50% {
+      left: 15%;
       top: -25%;
   }
-  100%{
+  100% {
       left: 0%;
       top: 0%;
   }
 }
-
 /*-----------------------footer---------------*/
 
 .footer{
@@ -1229,22 +1343,59 @@ padding: 0;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   
   /*.navbar {
     opacity: 0.95;   
    
   }*/
 
+  logo {
+    display: flex;
+    flex-direction: column; /* Empilha a imagem e o título verticalmente */
+    align-items: center;
+  } 
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: center; /* Alterado para centralizar todos os itens no modo mobile */
+    
+   
+  }
+  
+  .headerImage {
+    max-width: 100%; /* A imagem ocupará a largura máxima do contêiner pai */
+    margin: 0 10px; /* Adiciona espaçamento à direita e à esquerda da imagem no modo mobile */
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo da imagem no modo mobile */
+  }
+ 
+  .hamburger-lines {
+    order: 1; /* Move o ícone do menu para a segunda posição no modo mobile */
+  }
+
+
+
+  .link {
+    margin: 0 10px 10px 0; /* Margem ajustada para melhor espaçamento no modo mobile */
+  } 
+
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
     display: block;
   }
 
+  .cobertura::before,
+  .cobertura::after {
+    width: 150px;
+    height: 150px;
+  }
+
   .navbar-container {
     display: block;
     position: relative;
-    height: 64px;
+    height: 100px;
+    
+    
   }
 
   .navbar-container input[type="checkbox"] {
@@ -1269,6 +1420,7 @@ padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 5px;
   }
 
   .navbar-container .hamburger-lines .line {
@@ -1314,8 +1466,7 @@ padding: 0;
   }
 
   .logo {
-    position: absolute;
-    top: 5px;
+    position: absolute;   
     right: 100px;
     font-size: 2rem;    
   }
@@ -1335,6 +1486,8 @@ padding: 0;
   .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
+
+
   
 
   /* ......./ Produtos /......... */
@@ -1357,7 +1510,6 @@ padding: 0;
   }
 
 
-  
 }
 
 @media (max-width: 500px) {
@@ -1398,8 +1550,7 @@ padding: 0;
   }
 
   .logo {
-    position: absolute;
-    top: 06px;
+    position: absolute; 
     right: 15px;
     font-size: 3rem;
   }
@@ -1409,7 +1560,7 @@ padding: 0;
     font-size: 1.8rem;
     font-weight: 500;
   }
-
+  
   
 }
 
