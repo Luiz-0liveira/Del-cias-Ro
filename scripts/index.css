@@ -147,8 +147,13 @@ body {
 /* Estilos para a imagem do cabeçalho */
 .headerImage {
   width: 140px; /* Largura da imagem do cabeçalho */
-  height: 80px; /* Altura da imagem do cabeçalho */
+  height: 78px; /* Altura da imagem do cabeçalho */
   margin-left: 90%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  margin-top: 5px;
 }
 
 /* ............//// Estili hero imagem tomando div toda usando url ////......... */
@@ -489,6 +494,8 @@ font-display: 50px;
   left: 0;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+ 
   background-image: url('/Imagens/kitkat.jpg'); 
   background-size: cover;
   opacity: 0.4; /* Ajustar a opacidade */
@@ -498,6 +505,7 @@ font-display: 50px;
   right: 0;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
   background-image: url('/Imagens/BOLO-01.png'); 
   background-size: cover;
   opacity: 0.4; /* Ajustar a opacidade */
@@ -512,7 +520,7 @@ font-display: 50px;
 .cobertura-lista h1 {
   font-size: 1.8rem;
   font-weight: 400;
-  color: black; /* Cor do texto */
+  color: #555; /* Cor do texto */
 }
 
 .cobertura-lista h2 {
@@ -595,6 +603,7 @@ font-display: 50px;
 
 
 /* Estilos para a seção de produtos com o ID #food */
+/* Estilos para a seção de produtos com o ID #food */
 #food {
   padding: 5rem 0 0rem 0; /* Adiciona preenchimento de 5rem acima e abaixo, e 10rem à esquerda e à direita */
 }
@@ -633,16 +642,14 @@ font-display: 50px;
   display: block;
   width: 200px;
   height: 250px;
-  margin: 10px; /* Adiciona margem para espaçamento entre as imagens */
+  margin: 30px; /* Adiciona margem para espaçamento entre as imagens */
   object-fit: cover;
   object-position: center;
   border: 5px solid #ddd;
   border-radius: 30px;
   padding: 10px;
-  align-items: center;
-
+  align-items:center;
 }
-
 
 /* Estilos para o contêiner de imagens com a classe .img-container */
 .img-container {
@@ -661,11 +668,10 @@ font-display: 50px;
  /* background: linear-gradient(315deg, red, green, blue, red);*/
   background-size: 800% 800%;
   border-radius: 10px;
-  animation: animate 4s linear infinite;
+ /* animation: animate 4s linear infinite;*/
 }
 
 /* Estilos para o conteúdo da imagem com a classe .img-content */
-
 .img-content {
   align-items: center;
   position: absolute;
@@ -675,9 +681,7 @@ font-display: 50px;
   opacity: 0;
   z-index: 2;
   text-align: center;
-  
 }
-
 
 .img-content h3 {
   color: #fff;
@@ -752,7 +756,7 @@ font-display: 50px;
   padding: 5px;
   border: 5px solid #ddd;
   border-radius: 30px;
-  padding: 10px;/*imagem 5- outros produtos efeito hover*/
+  padding: 10px;
 
   
 }
@@ -1382,11 +1386,14 @@ font-display: 50px;
   .navbar-container .hamburger-lines {
     display: block;
   }
+  
+   
+  /*----Cobertura*/
 
   .cobertura::before,
   .cobertura::after {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 450px;
   }
 
   .navbar-container {
@@ -1519,10 +1526,17 @@ font-display: 50px;
   
 
   /* ......./ Produtos /......... */
+   
+  
 
-  .food-container {
-    flex-direction: column;
+ /* .food-container img {   
+   
+    
+  }*/
+  
+  .food-container {  
     align-items: stretch;
+    justify-content: center;
   }
 
   .food-type:not(:last-child) {
