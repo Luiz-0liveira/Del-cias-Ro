@@ -862,14 +862,7 @@ font-display: 50px;
 
 /*-----Cardapio de doces-----*/
 
-.cardapio-doces {
-  text-align: center;
-  font-size: 3.5rem;
-  font-weight: 400; 
-  margin-bottom: 40px;
-  margin-top: 100px;
-}
-
+/* Estilos para telas grandes (por exemplo, desktop) */
 .cardapio-container {
   width: 100%;
   display: flex;
@@ -914,9 +907,8 @@ font-display: 50px;
 .cardapio-description h2 {
   font-size: 1.4rem;
   color: black;
-  padding-left: 60px; 
+  padding-left: 60px;
 }
-
 
 /* ---------Bixe Nosso pdf------*/
 
@@ -1106,8 +1098,7 @@ font-display: 50px;
 
 #contact {
   padding: 5rem 0;
-  background: rgb(226, 226, 226);
-  
+  background: rgb(226, 226, 226); 
   
 }
 
@@ -1115,19 +1106,15 @@ font-display: 50px;
   width: 100%;
   display: flex;
   background: #fff;
+ 
 }
-
-
-
-/*Espaçamento icone para o texto*/
-
 
 .contact-img img {
   display: block;
   height: 400px;
   width: 100%;
   object-position: center;
-  object-fit: cover; 
+  object-fit: cover;
 
 }
 
@@ -1141,9 +1128,9 @@ font-display: 50px;
 
 .form-container {
   padding: 1rem;
-  width: 50%;
-  margin: auto;
-  margin-left: 10%;
+  width: 50%; 
+  max-width: 600px; /* ou o valor desejado */
+  margin: 20px; /* Ajuste a margem conforme necessário */
 }
 
 .form-container input {
@@ -1492,7 +1479,15 @@ font-display: 50px;
   .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
- 
+
+
+  /*------Monte seu Bolo*/
+
+  .monte-seu-bolo .massa img {           
+    margin: 1rem auto;
+  }
+
+
   /*-----Pagamento-----*/
   .pagamentos {
     margin-top: 10px; /* Ajusta a margem no topo para dispositivos móveis */
@@ -1515,8 +1510,8 @@ font-display: 50px;
   }
 
   .pagamentos img {
-    width: 100%; /* Faz a imagem ocupar a largura total para dispositivos móveis */
-    max-width: none; /* Remove a largura máxima para dispositivos móveis */
+    width: 60%; /* Faz a imagem ocupar a largura total para dispositivos móveis */
+    
   }
 
   .pagamentos .pagamento-img {
@@ -1562,6 +1557,35 @@ font-display: 50px;
     margin-right: 0; /* Removendo a margem direita para dispositivos móveis */
   }
 
+   /*-----Cardapio*/
+
+   .cardapio-container {
+    padding: 20px 0; /* Ajuste a padding conforme necessário para o modo mobile */
+  }
+
+  .cardapio-menu-item {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .cardapio-1 img,
+  .cardapio-2 img,
+  .cardapio-3 img,
+  .cardapio-4 img {
+    margin-right: 0; /* Remova o espaçamento à direita no modo mobile */
+    margin-bottom: 10px; /* Adicione um espaçamento inferior no modo mobile */
+  }
+
+  .cardapio-description {
+    text-align: center; /* Centraliza o texto no modo mobile */
+    padding: 0 20px; /* Adiciona um espaçamento à esquerda e à direita no modo mobile */
+  }
+
+  .cardapio-description h2 {
+    padding-left: 0; /* Remova o padding à esquerda no modo mobile */
+  }
+
 }
 
 
@@ -1590,16 +1614,20 @@ font-display: 50px;
 
   .form-container {
     width: 90%;
+    order: 2; /* Muda a ordem para colocar acima no modo mobile */
   }
 
   .contact-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .contact-img {
     width: 90%;
     margin: 3rem auto;
+    align-items: center;
+    order: 1; /* Muda a ordem para colocar embaixo no modo mobile */
   }
 
   .logo {
